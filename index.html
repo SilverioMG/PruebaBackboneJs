@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Backbone Project</title>
+    <link rel="stylesheet" href="./libs/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Manager</h1>
+        <hr/>
+        <div id="page">
+            <!--Aquí se renderizan las Vistas cuyo campo 'el: #page'.-->
+        </div>
+    </div>
+
+
+    <!--Se carga todo el código Javasript después del Html para asegurarme que se ejecuta después de renderizar toda la página.-->
+    <!--Importa el orden, por ejemplo, hay que cargar antes 'Underscore' que 'Backbone', porque el segundo utiliza al primero.-->
+    <script src="./libs/JQuery/jquery.js"></script>
+    <script src="./libs/underscore/underscore_1_9_2.js"></script>
+    <script src="./libs/backbone/backbone_1_4_0.js"></script>
+
+    <!--Código principal: (cuando se carga se ejecuta el 'JavaScript' que está en la raíz de cada archivo)-->
+    <script src="./models/UserCollection.js"></script>
+    <script src="./services/restFacadeService.js"></script>
+    <script src="./views/UserListView.js"></script>
+    <script src="./main.js"></script>
+    <script src="./router.js"></script>
+</body>
+</html>
