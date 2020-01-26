@@ -4,13 +4,19 @@ var UserCollection = Backbone.Collection.extend({
 
     getMockValues: function(){
         var values  = [{
-            name: 'Fulano1'
+            firstname: 'Fulano1',
+            lastname: 'Apellido Fulano1',
+            age: 31
         },
         {
-            name: 'Fulano2'
+            firstname: 'Fulano2',
+            lastname: 'Apellido Fulano2',
+            age: 32
         },
         {
-            name: 'Fulano3'
+            firstname: 'Fulano3',
+            lastname: 'Apellido Fulano3',
+            age: 33
         }];
         
         return values;
