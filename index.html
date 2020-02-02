@@ -23,9 +23,18 @@
     <script src="./libs/backbone/backbone_1_4_0.js"></script>
 
     <!--Código principal: (cuando se carga se ejecuta el 'JavaScript' que está en la raíz de cada archivo)-->
+    <!--Hay que cargarlos en orden porque unos archivos dependen de otros:-->
+    <!--Models:-->
     <script src="./models/UserCollection.js"></script>
+
+    <!--Services:-->
     <script src="./services/restFacadeService.js"></script>
-    <script src="./views/UserListView.js"></script>
+
+    <!--Views:-->
+    <script src="./views/UserList/UserListView.js"></script>
+    <script src="./views/EditUser/EditUserView.js"></script>
+
+    <!--Router que se encarga de crear las Vistas y renderizarlas según la URL:-->
     <script src="./main.js"></script>
     <script src="./router.js"></script>
 </body>

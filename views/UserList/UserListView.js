@@ -1,6 +1,6 @@
 var UserListView = Backbone.View.extend({
     el: '#page', //Indica el 'id' del elemento Html donde se renderizará esta vista.
-    templateUrl: "./views/UserListViewTemplate.html", //Url del archivo que contiene la plantilla de esta Vista. Se descarga del server en el método 'initialize()'.
+    templateUrl: "./views/UserList/UserListViewTemplate.html", //Url del archivo que contiene la plantilla de esta Vista. Se descarga del server en el método 'initialize()'.
     templateHtml: "", //Html de la plantilla cargada del server.
 
     initialize: function(){
